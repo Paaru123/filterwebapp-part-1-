@@ -15,7 +15,7 @@ posenet.on("pose",gotPoses);
 function draw(){
 image(video,0,0,300,300);
 }
-function take_es(results){
+function gotPoses(results){
     if(results.length>0){
 
     
@@ -25,4 +25,7 @@ console.log("nosex "+results[0].pose.nose.x);
 console.log("nosey "+results[0].pose.nose.y);
 
 }
+}
+function modelLoaded(){
+    console.log("MODEL IS LOADED lalalalala");
 }
